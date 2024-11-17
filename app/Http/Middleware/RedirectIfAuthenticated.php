@@ -23,7 +23,7 @@ class RedirectIfAuthenticated
             if (Auth::guard($guard)->check()) {
                 //return redirect(RouteServiceProvider::HOME);
 
-                return redirect(route('admin.dashboard.show'));
+                return redirect(route('site.home.show'));
             }
         }
 
